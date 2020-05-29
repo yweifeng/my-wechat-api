@@ -1,0 +1,9 @@
+server:
+  port: 8888
+wx:
+  mp:
+    configs:
+      - appId: wx91a1af711a50b4d7
+        secret: cff44374b44ef6166025f47d5bb5d559
+        token: yangweifeng
+        aesKey:
