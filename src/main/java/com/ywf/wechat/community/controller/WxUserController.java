@@ -24,6 +24,6 @@ public class WxUserController {
             WxMpUser wxMpUser = this.wxService.getUserService().userInfo(accessToken.getOpenId());
             return wxMpUser;
         }
-        return null;
+        return new WxMpUser();
     }
 }
