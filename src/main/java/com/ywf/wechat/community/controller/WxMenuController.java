@@ -24,7 +24,7 @@ import static me.chanjar.weixin.common.api.WxConsts.MenuButtonType;
  */
 @AllArgsConstructor
 @RestController
-@RequestMapping("/wx/menu/{appid}")
+@RequestMapping("/api/wx/menu/{appid}")
 public class WxMenuController {
     private final WxMpService wxService;
 

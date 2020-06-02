@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  */
 @AllArgsConstructor
 @Controller
-@RequestMapping("/wx/redirect/{appid}")
+@RequestMapping("/api/wx/redirect/{appid}")
 public class WxRedirectController {
     private final WxMpService wxService;
 

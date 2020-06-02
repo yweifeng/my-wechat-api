@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/wx/user")
+@RequestMapping({"/api/wx/user", "/wx/user"})
 public class WxUserController {
     private final WxMpService wxService;
 
