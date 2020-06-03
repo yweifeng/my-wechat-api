@@ -1,5 +1,11 @@
 server:
   port: 8888
+#  ssl:
+#    enabled: true
+#    key-alias: tomcat
+#    key-store: D:/develop/keystore/tomcat.keystore
+#    key-store-password: yangweifeng
+#    key-store-type: JKS
 wx:
   mp:
     configs:

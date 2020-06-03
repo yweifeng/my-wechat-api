@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.servlet.http.HttpServletRequest;
+
 /**
  * jsapi 演示接口的 controller.
  *
@@ -30,8 +32,10 @@ public class WxJsapiController {
     }
 
     @GetMapping("/config")
-    public WxJsapiSignature getConfig(@RequestParam String url) throws WxErrorException {
-        final WxJsapiSignature jsapiSignature = this.wxService.createJsapiSignature(url);
+    public WxJsapiSignature getConfig(HttpServletRequest request) throws WxErrorException {
+        // 解决url=xxx&state=xxx 等情况
+        String queryString = request.getQueryString().replace("url=","");
+        final WxJsapiSignature jsapiSignature = this.wxService.createJsapiSignature(queryString);
         System.out.println(jsapiSignature);
         return jsapiSignature;
     }

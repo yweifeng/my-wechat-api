@@ -40,13 +40,13 @@ public class WxMenuController {
         button11.setType(MenuButtonType.VIEW);
 
         String url = "https://open.weixin.qq.com/connect/oauth2/authorize?appid=" + appid +
-                "&redirect_uri=http://ywf.free.idcfengye.com/checkin/visitor&response_type=code&scope=snsapi_base&state=123#wechat_redirect";
+                "&redirect_uri=http://yweifeng.free.idcfengye.com/checkin/visitor&response_type=code&scope=snsapi_base&state=ywf#wechat_redirect";
         button11.setUrl(url);
         WxMenuButton button12 = new WxMenuButton();
         button12.setName("工作人员");
         button12.setKey("worker");
         button12.setType(MenuButtonType.VIEW);
-        button12.setUrl("http://www.soso.com?type=worker");
+        button12.setUrl(url);
         WxMenuButton button13 = new WxMenuButton();
         button13.setName("居民");
         button13.setKey("resident");
